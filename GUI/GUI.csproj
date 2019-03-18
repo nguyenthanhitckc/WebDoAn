@@ -1,0 +1,1215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E9BEA10-8773-46B3-8B20-FDC6B752782C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminCP\Dashboard.aspx" />
+    <Content Include="AdminCP\QLLoaiSanPham.aspx" />
+    <Content Include="ChiTietSP.aspx" />
+    <Content Include="DangKi.aspx" />
+    <Content Include="DoiMatKhau.aspx" />
+    <Content Include="GioHang.aspx" />
+    <Content Include="img\AnhMinhHoa\Aatrox_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Aatrox_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Aatrox_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Aatrox_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Ahri_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Ahri_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Ahri_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Ahri_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Ahri_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Ahri_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Ahri_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Ahri_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Ahri_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Akali_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Akali_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Akali_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Akali_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Akali_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Akali_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Akali_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Akali_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Akali_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Alistar_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Alistar_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Alistar_Avatar_10.jpg" />
+    <Content Include="img\AnhMinhHoa\Alistar_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Alistar_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Alistar_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Alistar_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Alistar_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Alistar_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Alistar_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Alistar_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Amumu_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Amumu_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Amumu_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Amumu_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Amumu_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Amumu_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Amumu_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Amumu_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Amumu_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Anivia_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Anivia_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Anivia_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Anivia_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Anivia_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Anivia_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Anivia_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Anivia_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Annie_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Annie_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Annie_Avatar_10.jpg" />
+    <Content Include="img\AnhMinhHoa\Annie_Avatar_11.jpg" />
+    <Content Include="img\AnhMinhHoa\Annie_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Annie_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Annie_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Annie_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Annie_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Annie_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Annie_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Annie_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Ashe_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Ashe_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Ashe_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Ashe_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Ashe_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Ashe_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Ashe_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Ashe_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Ashe_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Ashe_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\AurelionSol_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\AurelionSol_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Azir_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Azir_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Azir_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Azir_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Azir_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Bard_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Bard_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Bard_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Bard_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Blitzcrank_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Blitzcrank_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Blitzcrank_Avatar_10.jpg" />
+    <Content Include="img\AnhMinhHoa\Blitzcrank_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Blitzcrank_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Blitzcrank_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Blitzcrank_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Blitzcrank_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Blitzcrank_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Blitzcrank_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Blitzcrank_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Brand_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Brand_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Brand_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Brand_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Brand_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Brand_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Brand_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Braum_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Braum_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Braum_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Braum_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Braum_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Caitlyn_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Caitlyn_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Caitlyn_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Caitlyn_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Caitlyn_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Caitlyn_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Caitlyn_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Caitlyn_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Caitlyn_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Camille_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Camille_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Cassiopeia_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Cassiopeia_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Cassiopeia_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Cassiopeia_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Cassiopeia_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Cassiopeia_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\ChoGath_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\ChoGath_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\ChoGath_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\ChoGath_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\ChoGath_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\ChoGath_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\ChoGath_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Corki_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Corki_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Corki_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Corki_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Corki_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Corki_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Corki_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Corki_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Corki_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Darius_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Darius_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Darius_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Darius_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Darius_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Darius_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Darius_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Darius_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Diana_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Diana_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Diana_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Diana_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Diana_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Draven_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Draven_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Draven_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Draven_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Draven_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Draven_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Draven_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Draven_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\DrMundo_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\DrMundo_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\DrMundo_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\DrMundo_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\DrMundo_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\DrMundo_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\DrMundo_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\DrMundo_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\DrMundo_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\DrMundo_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Ekko_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Ekko_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Ekko_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Ekko_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Ekko_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Elise_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Elise_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Elise_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Elise_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Elise_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Elise_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Evelynn_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Evelynn_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Evelynn_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Evelynn_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Evelynn_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Ezreal_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Ezreal_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Ezreal_Avatar_10.jpg" />
+    <Content Include="img\AnhMinhHoa\Ezreal_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Ezreal_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Ezreal_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Ezreal_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Ezreal_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Ezreal_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Ezreal_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Ezreal_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiddlesticks_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiddlesticks_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiddlesticks_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiddlesticks_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiddlesticks_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiddlesticks_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiddlesticks_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiddlesticks_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiddlesticks_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiora_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiora_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiora_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiora_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiora_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiora_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Fiora_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Fizz_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Fizz_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Fizz_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Fizz_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Fizz_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Fizz_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Fizz_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Fizz_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Galio_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Galio_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Galio_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Galio_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Galio_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Galio_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Gangplank_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Gangplank_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Gangplank_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Gangplank_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Gangplank_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Gangplank_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Gangplank_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Gangplank_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Gangplank_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Garen_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Garen_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Garen_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Garen_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Garen_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Garen_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Garen_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Garen_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Garen_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Gnar_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Gnar_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Gnar_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Gnar_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Gnar_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Gnar_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Gragas_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Gragas_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Gragas_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Gragas_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Gragas_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Gragas_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Gragas_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Gragas_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Gragas_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Gragas_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Graves_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Graves_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Graves_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Graves_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Graves_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Graves_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Graves_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Graves_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Graves_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Hecarim_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Hecarim_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Hecarim_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Hecarim_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Hecarim_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Hecarim_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Hecarim_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Hecarim_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Heimerdinger_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Heimerdinger_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Heimerdinger_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Heimerdinger_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Heimerdinger_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Heimerdinger_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Illaoi_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Illaoi_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Irelia_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Irelia_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Irelia_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Irelia_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Irelia_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Irelia_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Ivern_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Ivern_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Janna_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Janna_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Janna_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Janna_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Janna_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Janna_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Janna_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Janna_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Janna_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\JarvanIV_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\JarvanIV_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\JarvanIV_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\JarvanIV_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\JarvanIV_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\JarvanIV_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\JarvanIV_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Jax_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Jax_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Jax_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Jax_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Jax_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Jax_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Jax_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Jax_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Jax_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Jax_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Jayce_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Jayce_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Jayce_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Jayce_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Jayce_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Jhin_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Jhin_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Jhin_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Jhin_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Jhin_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Jinx_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Jinx_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Jinx_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Jinx_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Jinx_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Jinx_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Kalista_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Kalista_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Kalista_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Kalista_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Karma_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Karma_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Karma_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Karma_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Karma_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Karma_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Karma_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Karma_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Karthus_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Karthus_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Karthus_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Karthus_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Karthus_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Karthus_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Karthus_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Kassadin_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Kassadin_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Kassadin_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Kassadin_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Kassadin_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Kassadin_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Katarina_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Katarina_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Katarina_Avatar_10.jpg" />
+    <Content Include="img\AnhMinhHoa\Katarina_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Katarina_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Katarina_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Katarina_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Katarina_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Katarina_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Katarina_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Katarina_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Kayle_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Kayle_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Kayle_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Kayle_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Kayle_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Kayle_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Kayle_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Kayle_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Kayle_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Kayle_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Kayn_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Kayn_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Kennen_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Kennen_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Kennen_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Kennen_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Kennen_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Kennen_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Kennen_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Kennen_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\KhaZix_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\KhaZix_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\KhaZix_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\KhaZix_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\KhaZix_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Kindred_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Kindred_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Kindred_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Kled_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Kled_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\KogMaw_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\KogMaw_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\KogMaw_Avatar_10.jpg" />
+    <Content Include="img\AnhMinhHoa\KogMaw_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\KogMaw_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\KogMaw_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\KogMaw_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\KogMaw_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\KogMaw_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\KogMaw_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\KogMaw_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\LeBlanc_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\LeBlanc_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\LeBlanc_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\LeBlanc_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\LeBlanc_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\LeBlanc_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\LeeSin_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\LeeSin_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\LeeSin_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\LeeSin_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\LeeSin_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\LeeSin_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\LeeSin_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\LeeSin_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\LeeSin_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Leona_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Leona_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Leona_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Leona_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Leona_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Leona_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Leona_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Lissandra_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Lissandra_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Lissandra_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Lissandra_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Lucian_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Lucian_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Lucian_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Lucian_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Lucian_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Lulu_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Lulu_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Lulu_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Lulu_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Lulu_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Lulu_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Lulu_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Lux_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Lux_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Lux_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Lux_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Lux_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Lux_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Lux_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Lux_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Malphite_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Malphite_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Malphite_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Malphite_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Malphite_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Malphite_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Malphite_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Malphite_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Malzahar_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Malzahar_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Malzahar_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Malzahar_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Malzahar_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Malzahar_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Malzahar_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Maokai_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Maokai_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Maokai_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Maokai_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Maokai_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Maokai_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Maokai_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Maokai_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\MasterYi_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\MasterYi_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\MasterYi_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\MasterYi_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\MasterYi_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\MasterYi_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\MasterYi_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\MasterYi_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\MasterYi_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\MissFortune_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\MissFortune_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\MissFortune_Avatar_10.jpg" />
+    <Content Include="img\AnhMinhHoa\MissFortune_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\MissFortune_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\MissFortune_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\MissFortune_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\MissFortune_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\MissFortune_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\MissFortune_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\MissFortune_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Mordekaiser_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Mordekaiser_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Mordekaiser_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Mordekaiser_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Mordekaiser_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Mordekaiser_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Morgana_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Morgana_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Morgana_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Morgana_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Morgana_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Morgana_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Morgana_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Morgana_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Morgana_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Nami_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Nami_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Nami_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Nami_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Nami_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Nami_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Nasus_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Nasus_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Nasus_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Nasus_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Nasus_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Nasus_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Nasus_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Nasus_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Nautilus_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Nautilus_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Nautilus_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Nautilus_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Nautilus_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Nautilus_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Nidalee_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Nidalee_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Nidalee_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Nidalee_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Nidalee_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Nidalee_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Nidalee_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Nidalee_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Nidalee_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Nidalee_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Nocturne_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Nocturne_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Nocturne_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Nocturne_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Nocturne_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Nocturne_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Nocturne_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Nunu_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Nunu_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Nunu_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Nunu_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Nunu_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Nunu_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Nunu_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Nunu_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Olaf_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Olaf_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Olaf_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Olaf_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Olaf_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Olaf_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Olaf_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Olaf_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Orianna_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Orianna_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Orianna_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Orianna_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Orianna_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Orianna_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Orianna_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Orianna_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Ornn_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Ornn_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Pantheon_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Pantheon_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Pantheon_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Pantheon_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Pantheon_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Pantheon_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Pantheon_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Pantheon_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Pantheon_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Poppy_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Poppy_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Poppy_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Poppy_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Poppy_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Poppy_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Poppy_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Poppy_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Poppy_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Quinn_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Quinn_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Quinn_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Quinn_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Quinn_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Rakan_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Rakan_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Rammus_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Rammus_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Rammus_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Rammus_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Rammus_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Rammus_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Rammus_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Rammus_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\RekSai_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\RekSai_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\RekSai_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Renekton_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Renekton_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Renekton_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Renekton_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Renekton_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Renekton_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Renekton_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Renekton_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Renekton_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Renekton_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Rengar_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Rengar_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Rengar_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Rengar_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Rengar_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Riven_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Riven_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Riven_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Riven_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Riven_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Riven_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Riven_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Riven_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Riven_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Rumble_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Rumble_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Rumble_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Rumble_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Ryze_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Ryze_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Ryze_Avatar_10.jpg" />
+    <Content Include="img\AnhMinhHoa\Ryze_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Ryze_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Ryze_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Ryze_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Ryze_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Ryze_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Ryze_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Ryze_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Sejuani_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Sejuani_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Sejuani_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Sejuani_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Sejuani_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Sejuani_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Sejuani_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Sejuani_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Shaco_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Shaco_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Shaco_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Shaco_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Shaco_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Shaco_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Shaco_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Shaco_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Shen_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Shen_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Shen_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Shen_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Shen_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Shen_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Shen_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Shyvana_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Shyvana_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Shyvana_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Shyvana_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Shyvana_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Shyvana_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Shyvana_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Singed_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Singed_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Singed_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Singed_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Singed_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Singed_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Singed_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Singed_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Singed_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Singed_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Sion_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Sion_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Sion_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Sion_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Sion_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Sion_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Sivir_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Sivir_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Sivir_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Sivir_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Sivir_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Sivir_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Sivir_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Sivir_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Sivir_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Sivir_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Skarner_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Skarner_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Skarner_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Skarner_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Skarner_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Sona_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Sona_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Sona_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Sona_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Sona_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Sona_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Sona_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Sona_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Soraka_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Soraka_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Soraka_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Soraka_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Soraka_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Soraka_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Soraka_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Soraka_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Swain_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Swain_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Swain_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Swain_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Syndra_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Syndra_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Syndra_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Syndra_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Syndra_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Syndra_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Syndra_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\TahmKench_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\TahmKench_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\TahmKench_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Taliyah_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Taliyah_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Talon_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Talon_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Talon_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Talon_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Talon_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Talon_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Taric_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Taric_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Taric_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Taric_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Taric_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Teemo_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Teemo_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Teemo_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Teemo_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Teemo_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Teemo_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Teemo_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Teemo_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Teemo_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Teemo_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Thresh_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Thresh_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Thresh_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Thresh_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Thresh_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Thresh_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Tristana_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Tristana_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Tristana_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Tristana_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Tristana_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Tristana_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Tristana_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Tristana_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Tristana_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Tristana_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Trundle_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Trundle_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Trundle_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Trundle_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Trundle_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Trundle_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Tryndamere_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Tryndamere_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Tryndamere_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Tryndamere_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Tryndamere_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Tryndamere_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Tryndamere_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Tryndamere_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Tryndamere_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\TwistedFate_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\TwistedFate_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\TwistedFate_Avatar_10.jpg" />
+    <Content Include="img\AnhMinhHoa\TwistedFate_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\TwistedFate_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\TwistedFate_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\TwistedFate_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\TwistedFate_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\TwistedFate_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\TwistedFate_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\TwistedFate_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Twitch_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Twitch_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Twitch_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Twitch_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Twitch_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Twitch_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Twitch_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Twitch_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Twitch_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Udyr_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Udyr_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Udyr_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Udyr_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Udyr_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Urgot_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Urgot_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Urgot_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Urgot_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Urgot_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Varus_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Varus_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Varus_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Varus_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Varus_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Varus_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Varus_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Vayne_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Vayne_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Vayne_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Vayne_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Vayne_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Vayne_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Vayne_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Vayne_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Vayne_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Veigar_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Veigar_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Veigar_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Veigar_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Veigar_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Veigar_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Veigar_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Veigar_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Veigar_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Veigar_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\VelKoz_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\VelKoz_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\VelKoz_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\VelKoz_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Viktor_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Viktor_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Viktor_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Viktor_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Viktor_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Vi_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Vi_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Vi_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Vi_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Vi_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Vi_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Vi_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Vladimir_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Vladimir_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Vladimir_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Vladimir_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Vladimir_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Vladimir_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Vladimir_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Vladimir_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Volibear_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Volibear_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Volibear_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Volibear_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Volibear_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Volibear_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Warwick_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Warwick_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Warwick_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Warwick_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Warwick_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Warwick_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Warwick_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Warwick_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Warwick_Avatar_8.jpg" />
+    <Content Include="img\AnhMinhHoa\Warwick_Avatar_9.jpg" />
+    <Content Include="img\AnhMinhHoa\Wukong_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Wukong_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Wukong_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Wukong_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Wukong_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Wukong_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Xayah_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Xayah_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Xerath_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Xerath_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Xerath_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Xerath_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Xerath_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\XinZhao_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\XinZhao_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\XinZhao_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\XinZhao_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\XinZhao_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\XinZhao_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\XinZhao_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\XinZhao_Avatar_7.jpg" />
+    <Content Include="img\AnhMinhHoa\Yasuo_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Yasuo_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Yasuo_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Yasuo_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Yasuo_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Yorick_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Yorick_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Yorick_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Yorick_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Zac_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Zac_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Zac_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Zac_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Zed_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Zed_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Zed_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Zed_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Zed_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Zed_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Ziggs_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Ziggs_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Ziggs_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Ziggs_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Ziggs_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Ziggs_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Ziggs_Avatar_6.jpg" />
+    <Content Include="img\AnhMinhHoa\Zilean_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Zilean_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Zilean_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Zilean_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Zilean_Avatar_4.jpg" />
+    <Content Include="img\AnhMinhHoa\Zilean_Avatar_5.jpg" />
+    <Content Include="img\AnhMinhHoa\Zoe_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Zoe_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Zyra_Avatar_0.jpg" />
+    <Content Include="img\AnhMinhHoa\Zyra_Avatar_1.jpg" />
+    <Content Include="img\AnhMinhHoa\Zyra_Avatar_2.jpg" />
+    <Content Include="img\AnhMinhHoa\Zyra_Avatar_3.jpg" />
+    <Content Include="img\AnhMinhHoa\Zyra_Avatar_4.jpg" />
+    <Content Include="img\favicon.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="css\bootstrap-grid.css.map" />
+    <Content Include="css\bootstrap-grid.min.css.map" />
+    <Content Include="css\bootstrap-reboot.css.map" />
+    <Content Include="css\bootstrap-reboot.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
+    <Content Include="QuenMatKhau.aspx" />
+    <Content Include="Site.Master" />
+    <Content Include="AdminCP\AdminCP.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="img\logo.jpg" />
+    <Content Include="img\slide-0.jpg" />
+    <Content Include="img\slide-1.jpg" />
+    <Content Include="img\slide-2.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\popper.min.js" />
+    <Content Include="TaiKhoan.aspx" />
+    <Content Include="ThanhToan.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminCP\AdminCP.Master.cs">
+      <DependentUpon>AdminCP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\AdminCP.Master.designer.cs">
+      <DependentUpon>AdminCP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\QLLoaiSanPham.aspx.cs">
+      <DependentUpon>QLLoaiSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\QLLoaiSanPham.aspx.designer.cs">
+      <DependentUpon>QLLoaiSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietSP.aspx.cs">
+      <DependentUpon>ChiTietSP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTietSP.aspx.designer.cs">
+      <DependentUpon>ChiTietSP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DangKi.aspx.cs">
+      <DependentUpon>DangKi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangKi.aspx.designer.cs">
+      <DependentUpon>DangKi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoiMatKhau.aspx.cs">
+      <DependentUpon>DoiMatKhau.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.aspx.designer.cs">
+      <DependentUpon>DoiMatKhau.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GioHang.aspx.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GioHang.aspx.designer.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuenMatKhau.aspx.cs">
+      <DependentUpon>QuenMatKhau.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuenMatKhau.aspx.designer.cs">
+      <DependentUpon>QuenMatKhau.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TaiKhoan.aspx.cs">
+      <DependentUpon>TaiKhoan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TaiKhoan.aspx.designer.cs">
+      <DependentUpon>TaiKhoan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhToan.aspx.cs">
+      <DependentUpon>ThanhToan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThanhToan.aspx.designer.cs">
+      <DependentUpon>ThanhToan.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{37f6537e-5010-4a0e-afae-46aaf88ca3aa}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{ff57527f-f734-4927-9980-2eff94d6f7dd}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\AnhDaiDien\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>46278</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:46278/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
